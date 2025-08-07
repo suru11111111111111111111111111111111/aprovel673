@@ -39,9 +39,6 @@ def check_approval(unique_key):
     else:
         return render_template('not_approved.html', unique_key=unique_key)  # Stay on approval check
 
-@app.route('/approved')
-def approved():
-    return render_template('approved.html')  # Show approved page
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=3001)
